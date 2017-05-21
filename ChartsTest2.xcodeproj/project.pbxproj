@@ -15,6 +15,9 @@
 		C585E41F1ED16D78008BAE1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C585E41D1ED16D78008BAE1A /* LaunchScreen.storyboard */; };
 		C585E42A1ED16D78008BAE1A /* ChartsTest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C585E4291ED16D78008BAE1A /* ChartsTest2Tests.m */; };
 		C585E4351ED16D78008BAE1A /* ChartsTest2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C585E4341ED16D78008BAE1A /* ChartsTest2UITests.m */; };
+		C585E44B1ED16E0E008BAE1A /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C585E4481ED16E05008BAE1A /* Charts.framework */; };
+		C585E44C1ED16E0E008BAE1A /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C585E4481ED16E05008BAE1A /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C585E4521ED16E23008BAE1A /* ChartsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585E4511ED16E23008BAE1A /* ChartsFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,42 @@
 			remoteGlobalIDString = C585E40B1ED16D78008BAE1A;
 			remoteInfo = ChartsTest2;
 		};
+		C585E4471ED16E05008BAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C585E4421ED16E05008BAE1A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		C585E4491ED16E05008BAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C585E4421ED16E05008BAE1A /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		C585E44D1ED16E0E008BAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C585E4421ED16E05008BAE1A /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C585E44F1ED16E0E008BAE1A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C585E44C1ED16E0E008BAE1A /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C585E40C1ED16D78008BAE1A /* ChartsTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +89,9 @@
 		C585E4301ED16D78008BAE1A /* ChartsTest2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartsTest2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C585E4341ED16D78008BAE1A /* ChartsTest2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsTest2UITests.m; sourceTree = "<group>"; };
 		C585E4361ED16D78008BAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C585E4421ED16E05008BAE1A /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		C585E4501ED16E23008BAE1A /* ChartsTest2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartsTest2-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C585E4511ED16E23008BAE1A /* ChartsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartsFile.swift; path = ../ChartsFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C585E44B1ED16E0E008BAE1A /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +127,7 @@
 				C585E4281ED16D78008BAE1A /* ChartsTest2Tests */,
 				C585E4331ED16D78008BAE1A /* ChartsTest2UITests */,
 				C585E40D1ED16D78008BAE1A /* Products */,
+				C585E4421ED16E05008BAE1A /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +160,8 @@
 		C585E40F1ED16D78008BAE1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C585E4511ED16E23008BAE1A /* ChartsFile.swift */,
+				C585E4501ED16E23008BAE1A /* ChartsTest2-Bridging-Header.h */,
 				C585E4101ED16D78008BAE1A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +185,15 @@
 			path = ChartsTest2UITests;
 			sourceTree = "<group>";
 		};
+		C585E4431ED16E05008BAE1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C585E4481ED16E05008BAE1A /* Charts.framework */,
+				C585E44A1ED16E05008BAE1A /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +204,12 @@
 				C585E4081ED16D78008BAE1A /* Sources */,
 				C585E4091ED16D78008BAE1A /* Frameworks */,
 				C585E40A1ED16D78008BAE1A /* Resources */,
+				C585E44F1ED16E0E008BAE1A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C585E44E1ED16E0E008BAE1A /* PBXTargetDependency */,
 			);
 			name = ChartsTest2;
 			productName = ChartsTest2;
@@ -207,6 +263,7 @@
 				TargetAttributes = {
 					C585E40B1ED16D78008BAE1A = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					C585E4241ED16D78008BAE1A = {
@@ -232,6 +289,12 @@
 			mainGroup = C585E4031ED16D78008BAE1A;
 			productRefGroup = C585E40D1ED16D78008BAE1A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C585E4431ED16E05008BAE1A /* Products */;
+					ProjectRef = C585E4421ED16E05008BAE1A /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C585E40B1ED16D78008BAE1A /* ChartsTest2 */,
@@ -240,6 +303,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C585E4481ED16E05008BAE1A /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = C585E4471ED16E05008BAE1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C585E44A1ED16E05008BAE1A /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = C585E4491ED16E05008BAE1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C585E40A1ED16D78008BAE1A /* Resources */ = {
@@ -273,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C585E4521ED16E23008BAE1A /* ChartsFile.swift in Sources */,
 				C585E4171ED16D78008BAE1A /* ViewController.m in Sources */,
 				C585E4141ED16D78008BAE1A /* AppDelegate.m in Sources */,
 				C585E4111ED16D78008BAE1A /* main.m in Sources */,
@@ -307,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = C585E40B1ED16D78008BAE1A /* ChartsTest2 */;
 			targetProxy = C585E4311ED16D78008BAE1A /* PBXContainerItemProxy */;
+		};
+		C585E44E1ED16E0E008BAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = C585E44D1ED16E0E008BAE1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,28 +509,38 @@
 		C585E43A1ED16D78008BAE1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChartsTest2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DemoTest.ChartsTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartsTest2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C585E43B1ED16D78008BAE1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChartsTest2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DemoTest.ChartsTest2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartsTest2-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C585E43D1ED16D78008BAE1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ChartsTest2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -457,6 +553,7 @@
 		C585E43E1ED16D78008BAE1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ChartsTest2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -469,6 +566,7 @@
 		C585E4401ED16D78008BAE1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ChartsTest2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DemoTest.ChartsTest2UITests;
@@ -480,6 +578,7 @@
 		C585E4411ED16D78008BAE1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ChartsTest2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DemoTest.ChartsTest2UITests;
@@ -507,6 +606,7 @@
 				C585E43B1ED16D78008BAE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C585E43C1ED16D78008BAE1A /* Build configuration list for PBXNativeTarget "ChartsTest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +615,7 @@
 				C585E43E1ED16D78008BAE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C585E43F1ED16D78008BAE1A /* Build configuration list for PBXNativeTarget "ChartsTest2UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +624,7 @@
 				C585E4411ED16D78008BAE1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

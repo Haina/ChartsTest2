@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "bc7722f5d038616bd5c4946165e23892"
+build_time: [548664288, 402880000]
+inputs:
+  "/Users/hannh/Documents/MyGitHub/ChartsTest2/ChartsFile.swift": [548664099, 0]
